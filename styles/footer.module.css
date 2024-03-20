@@ -1,0 +1,41 @@
+.footer{
+    background-color: #262626;
+    padding: 3rem 0;
+    margin: 3rem 0;
+}
+
+@media(min-width: 768px){
+    /*Para que la navegacion quede del lado izq y el pararfo del lado derecho*/
+    .contenido{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.navegacion{
+
+    /*para q en dispositivos pequeños se muestren de arriba hacia abajo*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+@media(min-width: 768px){
+    .navegacion{
+        flex-direction: row;
+    }
+}
+
+.navegacion a,
+.copyright
+{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.copyright{
+    /*para q en dispositivos pequeños el parrafo este centrado*/
+    text-align: center;
+}
